@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Lexend+Deca:wght@300;400&display=swap');
+
+body {
+    overflow: hidden;
+}
+.logo {
+    width: 60px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.logo-text {
+    font-family: 'Open Sans' , sans-serif;
+    display: none;
+}
+.nav {
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+.active-nav {
+    text-decoration: none;
+    color: #fdc733;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+.topnav-container {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    float: right;
+    top: 30px;
+    right: 10px;
+}
+.mockup {
+    width: 200px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    border-radius: 40px;
+}
+.title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+.caption {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: rgb(92, 91, 91);
+}
+.btn-1 {
+    display: none;
+}
+.btn-2 {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .mockup {
+        width: 300px;
+        position: relative;
+        float: right;
+        right: 5%;
+        top: 100px;
+    }
+    .title {
+        font-size: 60px;
+        position: relative;
+        text-align: none;
+        left: 1%;
+        top: 100px;
+    }
+    .caption {
+        font-size: 25px;
+        position: relative;
+        text-align: left;
+        top: 80px;
+        left: 15%;
+        color: grey;
+    } 
+    .btn-1 {
+        background: #fdc733;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        height: 40px;
+        display: block;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        cursor: pointer;
+        transition: background .1s;
+    }
+    .btn-2 {
+        background: #fdc733;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        height: 40px;
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        cursor: pointer;
+        transition: background .1s;
+    }
+    button:hover {
+        background: #fcdb81;
+    }
+    .nav:hover {
+        color: #fcdb81;
+    }
+    .active-nav:hover {
+        color: #fcdb81;
+    }
+    .btn-container {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        top: 100px;
+        left: 15%;
+        max-width: 420px;
+    }
+  }
+
