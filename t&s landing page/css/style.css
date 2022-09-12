@@ -37,49 +37,122 @@ body {
     right: 10px;
 }
 .mockup {
-    width: 200px;
+    width: 300px;
     display: block;
-    margin: auto;
-    position: relative;
-    top: 50px;
     border-radius: 40px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 100px;
+    left: 0%;
+    max-width: 420px;
+    height:35%;
+}
+conteneur-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+conteneur-de-droit{
+    display:block;
+    width:45%;
+}
+
+
+conteneur-de-gauche{
+    display: flex;
+    flex-direction: column;
+    width:55%;
+    margin-left: 15%;
 }
 .title {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
-    font-size: 35px;
-    text-align: center;
+    text-align: left;
     position: relative;
     top: 50px;
+    font-size: 60px;
+    text-align: none;
+    left: 0%;
+    top: 100px;
+
+
+
 }
 .caption {
+    margin-top:45px;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    font-size: 20px;
     position: relative;
     top: 30px;
-    text-align: center;
+    text-align: left;
     color: rgb(92, 91, 91);
+    font-size: 25px;
+    position: relative;
+    text-align: left;
+    left: 0%;
+    color: grey;
+
+
+
 }
 .btn-1 {
-    display: none;
+    background: #fdc733;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    display: block;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background .1s;
 }
 .btn-2 {
-    display: none;
+    background: #fdc733;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background .1s;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .mockup {
-        width: 300px;
+        width: 200px;
+        display: block;
+        margin: auto;
         position: relative;
-        float: right;
-        right: 5%;
-        top: 100px;
+        top: 50px;
+        border-radius: 40px;
     }
+    conteneur-main {
+
+        flex-direction: column-reverse;
+    }
+    
+    conteneur-de-gauche{
+        margin-left:15%;
+    }
+
+
+
     .title {
         font-size: 60px;
         position: relative;
         text-align: none;
-        left: 1%;
+        left: 0%;
         top: 100px;
     }
     .caption {
@@ -87,7 +160,7 @@ body {
         position: relative;
         text-align: left;
         top: 80px;
-        left: 15%;
+        left: 0%;
         color: grey;
     } 
     .btn-1 {
@@ -132,7 +205,7 @@ body {
         gap: 20px;
         position: relative;
         top: 100px;
-        left: 15%;
+        left: 0%;
         max-width: 420px;
     }
   }
